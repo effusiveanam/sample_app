@@ -5,19 +5,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+     <header className="App-header">
+        <img src="https://res.cloudinary.com/value-penguin/image/upload/dpr_1.0,f_auto,q_auto/v1504191286/paypal-mastercard_uyeqbe.png" className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <h1> Welcome to the Citi Landing Page</h1>
+          <h3>Purchase above $99+:</h3>
+          <h3>No interest if paid full in 6 months on purchase of $99 or more</h3>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      
       </header>
     </div>
   );
