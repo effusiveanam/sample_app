@@ -1,8 +1,21 @@
-table, td {
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-left:20px;
+  margin-bottom : 6%;
+  margin-left : 5%;
+  margin-right : 10%;
+  font-family:Arial;
+  font-size: 11pt;
+  background-color: lightgrey;
+}
+
+td {
   border: 1px solid black;
   border-collapse: collapse;
   padding:10px;
   margin: 0 auto;
+
 }
 
 th {
@@ -13,5 +26,15 @@ th {
   font-weight: bold;
   text-align: center;
   padding:30px;
+  font-size:15pt;
   
 }
+
+h4.container6 {
+ 
+  align-items: center;
+  margin-left: 5%;
+  
+   }
+h4.container6 p {
+  margin: 0 }

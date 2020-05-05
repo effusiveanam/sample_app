@@ -15,7 +15,7 @@ class UserComponent extends React.Component{
 
  return ( 
      <div> 
-     <div><h4 style={{color: "red"}}><i>I am printing the all query parameters with their values in the tabular format -</i></h4>
+     <div><h4 class="container6" style={{color: "red"}}>I am printing the all query parameters with their values in the tabular format below -</h4>
      <Table striped bordered hover style={{width:"100%"},{align:"center"}}>
   <thead>
     <tr>
