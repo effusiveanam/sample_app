@@ -1,7 +1,8 @@
 import queryString from 'query-string';
 import React from 'react';
+import Table from 'react-bootstrap/Table';
 import './App.css';
-//import './citiMock.css';
+import './citiMock.css';
 
 class UserComponent extends React.Component{
     render(){   
@@ -14,11 +15,33 @@ class UserComponent extends React.Component{
 
  return ( 
      <div> 
-     <div><h4 style={{color: "red"}}><i>I am printing the query parameters along with their values below -</i></h4>
-     <h5><i>code = {params.code} </i></h5>
-     <h5><i>scope = {params.scope} </i></h5>
-     <h5><i>id_token = {params.id_token} </i></h5>
-     <h5><i>state = {decodedData} </i></h5>
+     <div><h4 style={{color: "red"}}><i>I am printing the all query parameters with their values in the tabular format -</i></h4>
+     <Table striped bordered hover style={{width:"100%"},{align:"center"}}>
+  <thead>
+    <tr>
+      <th>Query-Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>code</td>
+      <td>{params.code}</td>
+    </tr>
+    <tr>
+    <td>scope</td>
+      <td>{params.scope}</td>
+    </tr>
+    <tr>
+    <td>id_token</td>
+      <td>{params.id_token}</td>
+    </tr>
+        <tr>
+    <td>state</td>
+      <td>{decodedData}</td>
+    </tr>
+  </tbody>
+</Table>
 	</div>
 	</div>
      
