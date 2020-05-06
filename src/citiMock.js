@@ -1,17 +1,25 @@
 import queryString from 'query-string';
 import React from 'react';
 import Table from 'react-bootstrap/Table';
+import 'url-search-params-polyfill';
+//import { URLSearchParams } from 'url';
+import { URL, URLSearchParams } from 'whatwg-url';
+import { Buffer } from 'buffer';
 import './App.css';
 import './citiMock.css';
 
 class UserComponent extends React.Component{
+  
     render(){   
   const url = this.props.location.search;
-  let params = queryString.parse(url);
+  //let params = queryString.parse(url);
+  const params = new URLSearchParams(url);
   console.log(params);
-     let state_parameter = params.state; 
+  if (params.get('state')) {
+     var state_parameter = params.state; 
    let decodedData = Buffer.from(state_parameter, 'base64').toString('ascii');
    console.log("********* Decode value ********** = " + decodedData);
+  }
 
  return ( 
      <div> 
@@ -38,7 +46,7 @@ class UserComponent extends React.Component{
     </tr>
         <tr>
     <td>state</td>
-      <td>{decodedData}</td>
+      <td>{this.decodedData}</td>
     </tr>
   </tbody>
 </Table>
