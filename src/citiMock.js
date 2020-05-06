@@ -1,7 +1,6 @@
 import queryString from 'query-string';
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-import 'url-search-params-polyfill';
 //import { URLSearchParams } from 'url';
 import { URL, URLSearchParams } from 'whatwg-url';
 import { Buffer } from 'buffer';
