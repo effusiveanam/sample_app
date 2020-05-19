@@ -7,6 +7,7 @@ table {
   font-family:Arial;
   font-size: 11pt;
   margin-right: 45px;
+
   
 }
 
@@ -40,3 +41,15 @@ h4.container6 {
    }
 h4.container6 p {
   margin: 0 }
+  
+.text{
+  text-align: center;
+  font-size:24px;
+}
+
+.value{
+  text-align: justify;
+  text-align-last: inherit;
+  font-size:23px;
+
+}
